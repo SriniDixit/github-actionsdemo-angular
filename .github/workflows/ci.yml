@@ -25,7 +25,7 @@ jobs:
       run: npm ci
 
     - name: Run tests
-      run: npm ci-test
+      run: npm run ci-test
 
     - name: Build Angular application
       run: npm run build --prod
