@@ -24,8 +24,14 @@ jobs:
     - name: Install dependencies
       run: npm ci
 
+    - name: Linting
+      run: npm run lint
+
     - name: Run tests
       run: npm run ci-test
 
     - name: Build Angular application
       run: npm run build --prod
+    
+    - name: Deploy the application
+      run: echo Deploying...
